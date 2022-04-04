@@ -28,8 +28,8 @@ export const Navbar = () => {
       display: "flex",
       justifyContent: "space-around"
     }}>
-      {menuItems.map(item => 
-        <ActiveLink text={item.text} href={item.href}>{item.text}</ActiveLink>
+      {menuItems.map((item, index) => 
+        <ActiveLink key={index} text={item.text} href={item.href}>{item.text}</ActiveLink>
       )}
     </div>
   )
